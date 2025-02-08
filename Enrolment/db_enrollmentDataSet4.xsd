@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_enrollmentDataSet4" targetNamespace="http://tempuri.org/db_enrollmentDataSet4.xsd" xmlns:mstns="http://tempuri.org/db_enrollmentDataSet4.xsd" xmlns="http://tempuri.org/db_enrollmentDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="db_enrollmentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_enrollmentConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Enrollment.My.MySettings.GlobalReference.Default.db_enrollmentConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_coursesubjectTableAdapter" GeneratorDataComponentClassName="tbl_coursesubjectTableAdapter" Name="tbl_coursesubject" UserDataComponentName="tbl_coursesubjectTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_enrollmentConnectionString (MySettings)" DbObjectName="db_enrollment.tbl_coursesubject" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `fld_CourseID`, `fld_MajorCode`, `fld_YearLevel`, `fld_Semester`, `fld_CourseCode`, `fld_CourseDescription`, `fld_Lec`, `fld_Lab`, `fld_Units` FROM `tbl_coursesubject`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="fld_CourseID" DataSetColumn="fld_CourseID" />
+              <Mapping SourceColumn="fld_MajorCode" DataSetColumn="fld_MajorCode" />
+              <Mapping SourceColumn="fld_YearLevel" DataSetColumn="fld_YearLevel" />
+              <Mapping SourceColumn="fld_Semester" DataSetColumn="fld_Semester" />
+              <Mapping SourceColumn="fld_CourseCode" DataSetColumn="fld_CourseCode" />
+              <Mapping SourceColumn="fld_CourseDescription" DataSetColumn="fld_CourseDescription" />
+              <Mapping SourceColumn="fld_Lec" DataSetColumn="fld_Lec" />
+              <Mapping SourceColumn="fld_Lab" DataSetColumn="fld_Lab" />
+              <Mapping SourceColumn="fld_Units" DataSetColumn="fld_Units" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_enrollmentDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db_enrollmentDataSet4" msprop:Generator_UserDSName="db_enrollmentDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_coursesubject" msprop:Generator_TableClassName="tbl_coursesubjectDataTable" msprop:Generator_TableVarName="tabletbl_coursesubject" msprop:Generator_TablePropName="tbl_coursesubject" msprop:Generator_RowDeletingName="tbl_coursesubjectRowDeleting" msprop:Generator_RowChangingName="tbl_coursesubjectRowChanging" msprop:Generator_RowEvHandlerName="tbl_coursesubjectRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_coursesubjectRowDeleted" msprop:Generator_UserTableName="tbl_coursesubject" msprop:Generator_RowChangedName="tbl_coursesubjectRowChanged" msprop:Generator_RowEvArgName="tbl_coursesubjectRowChangeEvent" msprop:Generator_RowClassName="tbl_coursesubjectRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fld_CourseID" msprop:Generator_ColumnVarNameInTable="columnfld_CourseID" msprop:Generator_ColumnPropNameInRow="fld_CourseID" msprop:Generator_ColumnPropNameInTable="fld_CourseIDColumn" msprop:Generator_UserColumnName="fld_CourseID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fld_MajorCode" msprop:Generator_ColumnVarNameInTable="columnfld_MajorCode" msprop:Generator_ColumnPropNameInRow="fld_MajorCode" msprop:Generator_ColumnPropNameInTable="fld_MajorCodeColumn" msprop:Generator_UserColumnName="fld_MajorCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fld_YearLevel" msprop:Generator_ColumnVarNameInTable="columnfld_YearLevel" msprop:Generator_ColumnPropNameInRow="fld_YearLevel" msprop:Generator_ColumnPropNameInTable="fld_YearLevelColumn" msprop:Generator_UserColumnName="fld_YearLevel" type="xs:int" />
+              <xs:element name="fld_Semester" msprop:Generator_ColumnVarNameInTable="columnfld_Semester" msprop:Generator_ColumnPropNameInRow="fld_Semester" msprop:Generator_ColumnPropNameInTable="fld_SemesterColumn" msprop:Generator_UserColumnName="fld_Semester">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fld_CourseCode" msprop:Generator_ColumnVarNameInTable="columnfld_CourseCode" msprop:Generator_ColumnPropNameInRow="fld_CourseCode" msprop:Generator_ColumnPropNameInTable="fld_CourseCodeColumn" msprop:Generator_UserColumnName="fld_CourseCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fld_CourseDescription" msprop:Generator_ColumnVarNameInTable="columnfld_CourseDescription" msprop:Generator_ColumnPropNameInRow="fld_CourseDescription" msprop:Generator_ColumnPropNameInTable="fld_CourseDescriptionColumn" msprop:Generator_UserColumnName="fld_CourseDescription">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="fld_Lec" msprop:Generator_ColumnVarNameInTable="columnfld_Lec" msprop:Generator_ColumnPropNameInRow="fld_Lec" msprop:Generator_ColumnPropNameInTable="fld_LecColumn" msprop:Generator_UserColumnName="fld_Lec" type="xs:int" />
+              <xs:element name="fld_Lab" msprop:Generator_ColumnVarNameInTable="columnfld_Lab" msprop:Generator_ColumnPropNameInRow="fld_Lab" msprop:Generator_ColumnPropNameInTable="fld_LabColumn" msprop:Generator_UserColumnName="fld_Lab" type="xs:int" />
+              <xs:element name="fld_Units" msprop:Generator_ColumnVarNameInTable="columnfld_Units" msprop:Generator_ColumnPropNameInRow="fld_Units" msprop:Generator_ColumnPropNameInTable="fld_UnitsColumn" msprop:Generator_UserColumnName="fld_Units" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
